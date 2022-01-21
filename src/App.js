@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
+//IMPORTS
+
+import { useState } from "react";
+
+import Todo from './components/todoapp/Todo.js';
+
+function App() { // this is a component.
+
+  //JS Code
+
+  //state in react -- this is an array, the variable count and the setcount
+  // const [count, setCount] = useState(localStorage.getItem('count') || 0);
+
+  // const addOne = () => {
+  //   setCount(count + 1);
+  //   localStorage.setItem('count', count + 1)
+  // }
+
+  // () => function(parameters), this is called an anonymous function
+  // this is all client side
+
+  return ( // returns JSX -- React's HTML/JS?
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Todo/>
     </div>
   );
 }
