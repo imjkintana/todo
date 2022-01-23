@@ -4,6 +4,7 @@
 import { useState } from "react";
 
 import Todo from './components/todoapp/Todo.js';
+import Counter from './components/counter/Counter.js';
 
 function App() { // this is a component.
 
@@ -22,7 +23,7 @@ function App() { // this is a component.
 
   return ( // returns JSX -- React's HTML/JS?
     <div className="App">
-      <Todo/>
+      <Counter/>
     </div>
   );
 }
