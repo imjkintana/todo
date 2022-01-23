@@ -23,6 +23,7 @@ function App() { // this is a component.
 
   return ( // returns JSX -- React's HTML/JS?
     <div className="App">
+      <Todo/>
       <Counter/>
     </div>
   );
